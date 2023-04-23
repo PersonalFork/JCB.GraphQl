@@ -1,8 +1,9 @@
-﻿using System.Linq.Expressions;
+﻿using Graph.Interfaces.Data;
+using System.Linq.Expressions;
 
-namespace Graph.Api.Data
+namespace Graph.Data.Interfaces
 {
-    public interface IRepository<TEntity, TId> where TEntity : BaseEntity<TId>
+    public interface IRepository<TEntity, TId> where TEntity : IEntity<TId>
     {
         IQueryable<TEntity> GetAll();
 

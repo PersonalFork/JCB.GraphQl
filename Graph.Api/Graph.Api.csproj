@@ -12,7 +12,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Graph.Data\Graph.Data.csproj" />
+    <ProjectReference Include="..\Graph.Interfaces\Graph.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>

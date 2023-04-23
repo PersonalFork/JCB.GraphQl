@@ -1,11 +1,11 @@
-﻿using Graph.Api.Data.Base;
+﻿using Graph.Data.Base;
 using Microsoft.EntityFrameworkCore;
 
-namespace Graph.Api.Data
+namespace Graph.Data
 {
     public class ApplicationDbContext : BaseDbContext
     {
-        private DbSet<Course> Courses { get; set; }
+        private DbSet<CourseEntity> Courses { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {

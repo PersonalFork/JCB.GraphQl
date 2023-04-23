@@ -1,11 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Graph.Interfaces.Data;
+using System.ComponentModel.DataAnnotations;
 
-namespace Graph.Api.Data
+namespace Graph.Data.Base
 {
     public class BaseEntity<TId> : IEntity<TId>
     {
         [Key]
         public TId Id { get; set; }
+
         public DateTime CreatedOn { get; set; }
         public DateTime? UpdatedOn { get; set; }
     }

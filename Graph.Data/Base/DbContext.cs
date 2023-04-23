@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Graph.Api.Data.Base
+namespace Graph.Data.Base
 {
     public abstract class BaseDbContext : DbContext
     {

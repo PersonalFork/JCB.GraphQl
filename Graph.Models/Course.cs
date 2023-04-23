@@ -1,6 +1,8 @@
-﻿namespace Graph.Api.Data
+﻿using Graph.Data.Base;
+
+namespace Graph.Data
 {
-    public class Course : BaseEntity<Guid>
+    public class Course
     {
         public string Name { get; set; }
         public string Description { get; set; }

@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Graph.Data.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
-namespace Graph.Api.Data.Base
+namespace Graph.Data.Base
 {
     public abstract class BaseRepository<TEntity, TId> : IRepository<TEntity, TId> where TEntity : BaseEntity<TId>
     {

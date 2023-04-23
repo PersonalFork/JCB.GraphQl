@@ -1,4 +1,4 @@
-using Graph.Api.Data;
+using Graph.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

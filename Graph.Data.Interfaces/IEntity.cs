@@ -1,4 +1,4 @@
-﻿namespace Graph.Api.Data
+﻿namespace Graph.Interfaces.Data
 {
     public interface IEntity<TId>
     {
