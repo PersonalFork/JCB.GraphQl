@@ -1,4 +1,5 @@
 ﻿using Graph.Data.Base;
+using Graph.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Graph.Data

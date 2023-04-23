@@ -1,6 +1,6 @@
 ﻿using Graph.Data.Base;
 
-namespace Graph.Data
+namespace Graph.Data.Entities
 {
     public class CourseEntity : BaseEntity<Guid>
     {

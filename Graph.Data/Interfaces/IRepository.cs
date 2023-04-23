@@ -1,5 +1,4 @@
-﻿using Graph.Interfaces.Data;
-using System.Linq.Expressions;
+﻿using System.Linq.Expressions;
 
 namespace Graph.Data.Interfaces
 {

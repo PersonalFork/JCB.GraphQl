@@ -8,7 +8,7 @@ namespace Graph.Data.Base
         private readonly DbContext _dbContext;
         private readonly DbSet<TEntity> _entities;
 
-        protected BaseRepository(DbContext dbContext)
+        protected BaseRepository(ApplicationDbContext dbContext)
         {
             _dbContext = dbContext;
             _entities = _dbContext.Set<TEntity>();

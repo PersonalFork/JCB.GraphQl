@@ -1,4 +1,4 @@
-﻿using Graph.Interfaces.Data;
+﻿using Graph.Data.Interfaces;
 using System.ComponentModel.DataAnnotations;
 
 namespace Graph.Data.Base

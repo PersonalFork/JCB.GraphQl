@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph.Models", "Graph.Model
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{15BD3426-C6B9-4F62-A3D0-9F1CA44003FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph.Data.Interfaces", "Graph.Data.Interfaces\Graph.Data.Interfaces.csproj", "{9F9C819A-2B69-4F42-8533-DE176D5A01D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph.Services", "Graph.Services\Graph.Services.csproj", "{55054D2C-1646-4793-A43E-A9881925419A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,17 +37,16 @@ Global
 		{D13AFA97-3FA1-44DE-B411-27442A86E48D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D13AFA97-3FA1-44DE-B411-27442A86E48D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D13AFA97-3FA1-44DE-B411-27442A86E48D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9F9C819A-2B69-4F42-8533-DE176D5A01D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9F9C819A-2B69-4F42-8533-DE176D5A01D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9F9C819A-2B69-4F42-8533-DE176D5A01D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9F9C819A-2B69-4F42-8533-DE176D5A01D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55054D2C-1646-4793-A43E-A9881925419A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55054D2C-1646-4793-A43E-A9881925419A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55054D2C-1646-4793-A43E-A9881925419A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55054D2C-1646-4793-A43E-A9881925419A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B8D2BBAF-34ED-49D1-BDDE-FBBD8487A4C8} = {15BD3426-C6B9-4F62-A3D0-9F1CA44003FA}
-		{9F9C819A-2B69-4F42-8533-DE176D5A01D5} = {15BD3426-C6B9-4F62-A3D0-9F1CA44003FA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5DE265C2-4060-45BA-9EA7-AEE95D116A02}

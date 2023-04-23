@@ -1,10 +1,17 @@
 using Graph.Data;
+using Graph.Data.Repositories;
+using Graph.Interfaces.Services;
+using Graph.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Add Services.
+builder.Services.AddScoped<ICoursesRepository, CoursesRepository>();
+builder.Services.AddScoped<ICourseManagementService, CourseManagementService>();
 
 var sqliteConnectionString = builder.Configuration.GetConnectionString("SqLite");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
