@@ -1,4 +1,5 @@
 using Graph.Data;
+using Graph.Data.GraphQl.Mutations;
 using Graph.Data.GraphQl.Queries;
 using Graph.Data.GraphQl.Schemas;
 using Graph.Data.Repositories;
@@ -29,6 +30,7 @@ builder.Services.AddGraphQL(options =>
     options.AddSystemTextJson();
 });
 builder.Services.AddScoped<CourseQueries>();
+builder.Services.AddScoped<CourseMutation>();
 builder.Services.AddScoped<AppSchema>();
 var app = builder.Build();
 
