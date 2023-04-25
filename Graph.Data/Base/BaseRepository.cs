@@ -19,6 +19,7 @@ namespace Graph.Data.Base
             if (item == null) throw new ArgumentNullException(nameof(item));
 
             _entities.Add(item);
+            item.CreatedOn = DateTime.Now;
             _dbContext.SaveChanges();
             return item.Id;
         }
@@ -57,6 +58,7 @@ namespace Graph.Data.Base
             {
                 return 0;
             }
+            item.UpdatedOn = DateTime.Now;
             _entities.Update(item);
             return _dbContext.SaveChanges();
         }

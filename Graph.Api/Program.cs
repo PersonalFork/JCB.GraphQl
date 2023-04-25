@@ -1,7 +1,11 @@
 using Graph.Data;
+using Graph.Data.GraphQl.Queries;
+using Graph.Data.GraphQl.Schemas;
 using Graph.Data.Repositories;
 using Graph.Interfaces.Services;
 using Graph.Services;
+using GraphQL;
+
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,6 +23,13 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(connectionString: sqliteConnectionString);
 });
 
+// Add GraphQl.
+builder.Services.AddGraphQL(options =>
+{
+    options.AddSystemTextJson();
+});
+builder.Services.AddScoped<CourseQueries>();
+builder.Services.AddScoped<AppSchema>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -27,6 +38,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseGraphQL<AppSchema>();
+app.UseGraphQLGraphiQL("/ui/graphql");
 
 app.UseHttpsRedirection();
 
